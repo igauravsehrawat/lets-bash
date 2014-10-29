@@ -2,8 +2,9 @@
 
 read overall
 total=0
+total_count=$overall
 
-while [[ overall > 0 ]]; do
+while [[ overall -gt 0 ]]; do
 	read another_number
 	
 	let "total += another_number"
@@ -13,4 +14,4 @@ while [[ overall > 0 ]]; do
 	fi
 done
 
-echo "scale=3 ; $total/$overall" | bc -l
+echo "scale=3 ; $total/$total_count" | bc -l
