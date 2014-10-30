@@ -15,3 +15,5 @@ while [[ overall -gt 0 ]]; do
 done
 
 echo "scale=3 ; $total/$total_count" | bc -l
+printf "%.3f" $(( echo "scale=3;$total/$total_count" )) | bc -l
+#printf "%.3f" $(( $total/$total_count ))
