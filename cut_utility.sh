@@ -10,6 +10,7 @@ while [[ ${#line} -gt 0 ]]; do
 	echo "$line" | cut -c3 
 	read line
 done
+exit 0
 
 
 
